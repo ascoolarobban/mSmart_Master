@@ -1,24 +1,388 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cai-za-pqv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mSmart_test2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="HcV-qt-wWR">
+                                <rect key="frame" x="20" y="335" width="374" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLA-sa-Uvu" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wMV-mx-916"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Macbook Air">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseCpu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ra2-Vn-9gm"/>
+                                            <segue destination="tHN-Kh-NnJ" kind="show" id="YZG-Ac-fK7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ule-OJ-N5u" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88" width="374" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="weX-NK-4Kj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Macbook Pro">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseCpu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U8H-B2-5L2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAE-rR-DGK" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="176" width="374" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bbe-sW-ehe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="iMac">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseCpu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVq-hk-eKN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aLA-sa-Uvu" firstAttribute="leading" secondItem="HcV-qt-wWR" secondAttribute="leading" id="EoT-RV-PI1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ule-OJ-N5u" secondAttribute="trailing" id="Nmp-Mp-6Lw"/>
+                                    <constraint firstAttribute="trailing" secondItem="BAE-rR-DGK" secondAttribute="trailing" id="d0f-5m-cX9"/>
+                                    <constraint firstAttribute="trailing" secondItem="aLA-sa-Uvu" secondAttribute="trailing" id="gEP-Se-S1m"/>
+                                    <constraint firstItem="ule-OJ-N5u" firstAttribute="leading" secondItem="HcV-qt-wWR" secondAttribute="leading" id="iis-rm-Afx"/>
+                                    <constraint firstItem="BAE-rR-DGK" firstAttribute="leading" secondItem="HcV-qt-wWR" secondAttribute="leading" id="yjZ-xe-zP1"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mSmartBanner" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-1K-reW">
+                                <rect key="frame" x="0.0" y="-28" width="414" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="3Lp-uc-Yle"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oBr-1K-reW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7KO-tJ-mFf"/>
+                            <constraint firstItem="oBr-1K-reW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-28" id="8OQ-35-HlN"/>
+                            <constraint firstItem="oBr-1K-reW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9t2-Xu-SQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HcV-qt-wWR" secondAttribute="trailing" constant="20" id="BJB-Hl-uC5"/>
+                            <constraint firstItem="oBr-1K-reW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cjz-MP-HQa"/>
+                            <constraint firstItem="HcV-qt-wWR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gvo-oC-ifi"/>
+                            <constraint firstItem="HcV-qt-wWR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KoN-WK-8dm"/>
+                            <constraint firstItem="oBr-1K-reW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NwK-sa-eq0"/>
+                            <constraint firstItem="oBr-1K-reW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TPZ-z2-8SY"/>
+                            <constraint firstItem="HcV-qt-wWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V8G-Sx-tiQ"/>
+                            <constraint firstItem="oBr-1K-reW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pgE-q6-rXE"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="6OG-Ug-QG5"/>
+                    <connections>
+                        <outlet property="mbaButton" destination="aLA-sa-Uvu" id="2jM-Nu-u6c"/>
+                        <outletCollection property="chooseCPU" destination="aLA-sa-Uvu" collectionClass="NSMutableArray" id="AhQ-dA-CWC"/>
+                        <outletCollection property="chooseCPU" destination="ule-OJ-N5u" collectionClass="NSMutableArray" id="mbM-Wt-Iab"/>
+                        <outletCollection property="chooseCPU" destination="BAE-rR-DGK" collectionClass="NSMutableArray" id="f9t-bk-tzO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="739.13043478260875" y="83.705357142857139"/>
+        </scene>
+        <!--Mba View Controller-->
+        <scene sceneID="y7C-GC-tcS">
+            <objects>
+                <viewController storyboardIdentifier="mba" id="tHN-Kh-NnJ" customClass="mbaViewController" customModule="mSmart_test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AJk-at-ksX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mba" translatesAutoresizingMaskIntoConstraints="NO" id="ALq-Nd-Uhw">
+                                <rect key="frame" x="20" y="88" width="374" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="BtA-Wm-E5A"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="H3r-OM-7OH">
+                                <rect key="frame" x="20" y="384.5" width="374" height="127"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d73-7T-UVD" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ETY-hg-arr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="8 GB enhetligt minne">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gb8button:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="82W-fN-c7o"/>
+                                            <action selector="memorySelected:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="zun-8M-SeT"/>
+                                            <segue destination="eit-Dh-ADR" kind="show" id="C34-Ti-0f6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWs-22-hJR" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rNg-D1-zFY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="16 GB enhetligt minne">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gb16button:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="BTP-3k-CDg"/>
+                                            <action selector="memorySelected:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="BXC-ii-mUU"/>
+                                            <segue destination="eit-Dh-ADR" kind="show" id="VgL-X3-xej"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7R-ca-102">
+                                <rect key="frame" x="20" y="252" width="374" height="121"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="44J-Yz-FfO"/>
+                                </constraints>
+                                <string key="text">Apple M1‑chip med åttakärnig processor, sjukärnig grafikprocessor och 16‑kärnig Neural Engine
+8 GB enhetligt minne
+256 GB SSD-lagring
+Retina-skärm med True Tone
+Bakbelyst Magic Keyboard – svenskt
+Touch ID
+Force Touch-styrplatta
+Två Thunderbolt-/usb 4-portar</string>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mBk-K5-o9F"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ALq-Nd-Uhw" firstAttribute="top" secondItem="mBk-K5-o9F" secondAttribute="top" id="AUz-43-I1k"/>
+                            <constraint firstItem="E7R-ca-102" firstAttribute="leading" secondItem="mBk-K5-o9F" secondAttribute="leading" constant="20" id="AyH-gd-oUX"/>
+                            <constraint firstItem="H3r-OM-7OH" firstAttribute="centerY" secondItem="AJk-at-ksX" secondAttribute="centerY" id="OKL-9v-IZh"/>
+                            <constraint firstItem="H3r-OM-7OH" firstAttribute="centerX" secondItem="AJk-at-ksX" secondAttribute="centerX" id="XkG-ZB-dDT"/>
+                            <constraint firstItem="H3r-OM-7OH" firstAttribute="centerY" secondItem="AJk-at-ksX" secondAttribute="centerY" id="YxF-Dv-Xbz"/>
+                            <constraint firstItem="H3r-OM-7OH" firstAttribute="centerX" secondItem="AJk-at-ksX" secondAttribute="centerX" id="e3F-OX-GwW"/>
+                            <constraint firstItem="mBk-K5-o9F" firstAttribute="trailing" secondItem="ALq-Nd-Uhw" secondAttribute="trailing" constant="20" id="i44-AG-CSn"/>
+                            <constraint firstItem="H3r-OM-7OH" firstAttribute="leading" secondItem="mBk-K5-o9F" secondAttribute="leading" constant="20" id="jk5-RT-if5"/>
+                            <constraint firstItem="ALq-Nd-Uhw" firstAttribute="leading" secondItem="mBk-K5-o9F" secondAttribute="leading" constant="20" id="kU7-Mj-s6n"/>
+                            <constraint firstItem="mBk-K5-o9F" firstAttribute="trailing" secondItem="H3r-OM-7OH" secondAttribute="trailing" constant="20" id="pEh-KJ-M80"/>
+                            <constraint firstItem="E7R-ca-102" firstAttribute="top" secondItem="ALq-Nd-Uhw" secondAttribute="bottom" id="tcp-zl-d6N"/>
+                            <constraint firstItem="mBk-K5-o9F" firstAttribute="trailing" secondItem="E7R-ca-102" secondAttribute="trailing" constant="20" id="vzc-gJ-9Ag"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="h6u-ml-r9i"/>
+                    <connections>
+                        <outlet property="gb16Button" destination="bWs-22-hJR" id="mjn-VL-gGK"/>
+                        <outlet property="gb8button" destination="d73-7T-UVD" id="A6V-cj-CW1"/>
+                        <outletCollection property="mba_memorySelect" destination="d73-7T-UVD" collectionClass="NSMutableArray" id="dyn-R9-6L8"/>
+                        <outletCollection property="mba_memorySelect" destination="bWs-22-hJR" collectionClass="NSMutableArray" id="kSy-wm-uds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVS-13-t3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1450.7246376811595" y="83.705357142857139"/>
+        </scene>
+        <!--Mba Storage View Controller-->
+        <scene sceneID="vSP-2W-ls6">
+            <objects>
+                <viewController storyboardIdentifier="mba_storage" id="eit-Dh-ADR" customClass="mbaStorageViewController" customModule="mSmart_test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXJ-it-rmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="BjB-Zq-naI">
+                                <rect key="frame" x="20" y="312" width="374" height="272"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pt9-rV-7g1" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Uwz-54-QJZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="256 GB SSD-lagring">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="storageSelected:" destination="eit-Dh-ADR" eventType="touchUpInside" id="Kmj-ay-bt1"/>
+                                            <segue destination="LL8-rp-HVU" kind="show" id="6Mi-L9-eak"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-M3-DDV" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="74" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dZQ-P9-N22"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="512 GB SSD-lagring">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="storageSelected:" destination="eit-Dh-ADR" eventType="touchUpInside" id="mia-x5-z3V"/>
+                                            <segue destination="LL8-rp-HVU" kind="show" id="Ocx-5V-Cxk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jl-7g-h4c" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="148" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="V5w-Of-KsK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="1 TB SSD-lagring">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="storageSelected:" destination="eit-Dh-ADR" eventType="touchUpInside" id="fjj-Xc-9yv"/>
+                                            <segue destination="LL8-rp-HVU" kind="show" id="Y4u-87-6B3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-rn-4dn" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="222" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oT1-qh-tbG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="2 TB SSD-lagring">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="storageSelected:" destination="eit-Dh-ADR" eventType="touchUpInside" id="34S-PK-KRK"/>
+                                            <segue destination="LL8-rp-HVU" kind="show" id="8TG-c5-azr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mba2" translatesAutoresizingMaskIntoConstraints="NO" id="UMX-tP-6VT">
+                                <rect key="frame" x="20" y="88" width="374" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="KuN-w8-gbY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V06-d8-5J1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BjB-Zq-naI" firstAttribute="centerY" secondItem="QXJ-it-rmJ" secondAttribute="centerY" id="1eu-aP-6fk"/>
+                            <constraint firstItem="UMX-tP-6VT" firstAttribute="top" secondItem="V06-d8-5J1" secondAttribute="top" id="8bc-2A-U48"/>
+                            <constraint firstItem="UMX-tP-6VT" firstAttribute="leading" secondItem="V06-d8-5J1" secondAttribute="leading" constant="20" id="NzD-fb-laB"/>
+                            <constraint firstItem="V06-d8-5J1" firstAttribute="trailing" secondItem="BjB-Zq-naI" secondAttribute="trailing" constant="20" id="dcO-jH-NOa"/>
+                            <constraint firstItem="V06-d8-5J1" firstAttribute="trailing" secondItem="UMX-tP-6VT" secondAttribute="trailing" constant="20" id="eEC-Bg-dHP"/>
+                            <constraint firstItem="BjB-Zq-naI" firstAttribute="centerX" secondItem="QXJ-it-rmJ" secondAttribute="centerX" id="f9b-mc-Prx"/>
+                            <constraint firstItem="BjB-Zq-naI" firstAttribute="leading" secondItem="V06-d8-5J1" secondAttribute="leading" constant="20" id="ydI-dY-06L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WX9-Ki-OlJ"/>
+                    <connections>
+                        <outletCollection property="mba_storageButtons" destination="Pt9-rV-7g1" collectionClass="NSMutableArray" id="3OL-IC-4XH"/>
+                        <outletCollection property="mba_storageButtons" destination="pdz-M3-DDV" collectionClass="NSMutableArray" id="Idx-eo-bUF"/>
+                        <outletCollection property="mba_storageButtons" destination="6Jl-7g-h4c" collectionClass="NSMutableArray" id="RLP-35-uG8"/>
+                        <outletCollection property="mba_storageButtons" destination="Xc5-rn-4dn" collectionClass="NSMutableArray" id="hk8-jA-P2v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAh-68-cYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2117" y="84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OP0-Ut-Wtr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cai-za-pqv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rpD-lo-DLV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.69999999999999996"/>
+                        <color key="tintColor" systemColor="secondaryLabelColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q7r-r1-OKR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4g-US-S5U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="84"/>
+        </scene>
+        <!--Total View Controller-->
+        <scene sceneID="xhF-8X-QGj">
+            <objects>
+                <viewController storyboardIdentifier="total" id="LL8-rp-HVU" customClass="TotalViewController" customModule="mSmart_test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7mJ-tu-57J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PRIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzN-0h-i9F">
+                                <rect key="frame" x="98.5" y="343.5" width="215" height="209"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="MiF-NL-LiC"/>
+                                    <constraint firstAttribute="width" constant="215" id="oIt-8Z-NJC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="93"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gb8-xF-ihd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hzN-0h-i9F" firstAttribute="centerY" secondItem="7mJ-tu-57J" secondAttribute="centerY" id="JiZ-nM-GEa"/>
+                            <constraint firstItem="hzN-0h-i9F" firstAttribute="centerX" secondItem="7mJ-tu-57J" secondAttribute="centerX" id="ldR-VX-UR5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ROi-ic-zME"/>
+                    <connections>
+                        <outlet property="label" destination="hzN-0h-i9F" id="sPD-ka-cPk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeZ-XH-q5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798.5507246376815" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6Mi-L9-eak"/>
+        <segue reference="C34-Ti-0f6"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="systemBlueColor"/>
+    <resources>
+        <image name="mSmartBanner" width="1079" height="546"/>
+        <image name="mba" width="452" height="420"/>
+        <image name="mba2" width="2000" height="1536"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
