@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import BuyMeACoffee
+
 
 class infoViewController: UIViewController {
 

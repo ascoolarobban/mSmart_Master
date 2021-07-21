@@ -384,17 +384,6 @@ Två Thunderbolt-/usb 4-portar</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poZ-oB-bVm">
-                                <rect key="frame" x="60" y="315" width="294" height="266"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="266" id="OHF-5W-kcC"/>
-                                    <constraint firstAttribute="width" constant="294" id="W20-DN-xOI"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="coffee"/>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Alla uträkningar är utefter dll's formel. Total ex moms + app *dll. ©Robin Ellingsen. 2020" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fni-c3-ogU">
                                 <rect key="frame" x="87" y="589" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -432,13 +421,9 @@ Två Thunderbolt-/usb 4-portar</string>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="nfn-BV-ugj" secondAttribute="trailing" constant="171.5" id="EvE-ZP-3XX"/>
                             <constraint firstItem="fni-c3-ogU" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="87" id="JNd-8e-nf6"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="fni-c3-ogU" secondAttribute="bottom" constant="145" id="UA4-TB-xhH"/>
-                            <constraint firstItem="poZ-oB-bVm" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="60" id="Wxq-RN-SdF"/>
-                            <constraint firstItem="poZ-oB-bVm" firstAttribute="centerX" secondItem="geV-Mb-Zfj" secondAttribute="centerX" id="aDs-Wp-fnC"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="nfn-BV-ugj" secondAttribute="bottom" constant="101" id="bsN-46-EOr"/>
                             <constraint firstItem="nfn-BV-ugj" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="171.5" id="e04-lN-Q2Q"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="fni-c3-ogU" secondAttribute="trailing" constant="87" id="eWH-Tg-Pra"/>
-                            <constraint firstItem="poZ-oB-bVm" firstAttribute="centerY" secondItem="geV-Mb-Zfj" secondAttribute="centerY" id="iAA-Py-bXA"/>
-                            <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="poZ-oB-bVm" secondAttribute="trailing" constant="60" id="oXd-6O-ksZ"/>
                             <constraint firstItem="tzA-lR-N1J" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="90" id="ola-kY-Ccz"/>
                             <constraint firstItem="tzA-lR-N1J" firstAttribute="top" secondItem="Izq-8f-hji" secondAttribute="top" constant="177" id="s1F-Ny-xyv"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="tzA-lR-N1J" secondAttribute="trailing" constant="90" id="zVm-Z0-ebS"/>
@@ -457,7 +442,6 @@ Två Thunderbolt-/usb 4-portar</string>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
-        <image name="coffee" width="512" height="512"/>
         <image name="mSmartBanner" width="1079" height="546"/>
         <image name="mba" width="452" height="420"/>
         <image name="mba2" width="2000" height="1536"/>
