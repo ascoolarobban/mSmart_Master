@@ -15,12 +15,12 @@ class infoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func infoButton(_ sender: Any) {
-        if let url = URL(string: "https://www.linkedin.com/in/iotrobban/") {
-              UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
+    @IBAction func contactButton(_ sender: Any) {
+            if let url = URL(string: "https://www.linkedin.com/in/iotrobban/") {
+                  UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
     }
+    
 
 }
  

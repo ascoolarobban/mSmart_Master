@@ -22,7 +22,7 @@ class TotalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Total"
-        label.text = totalString
+        
         
     }
     @IBAction func enterTotal(_sender: Any)

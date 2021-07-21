@@ -348,29 +348,10 @@ Två Thunderbolt-/usb 4-portar</string>
                     <view key="view" contentMode="scaleToFill" id="7mJ-tu-57J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PRIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzN-0h-i9F">
-                                <rect key="frame" x="98.5" y="343.5" width="215" height="209"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="209" id="MiF-NL-LiC"/>
-                                    <constraint firstAttribute="width" constant="215" id="oIt-8Z-NJC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="93"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gb8-xF-ihd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="hzN-0h-i9F" firstAttribute="centerY" secondItem="7mJ-tu-57J" secondAttribute="centerY" id="JiZ-nM-GEa"/>
-                            <constraint firstItem="hzN-0h-i9F" firstAttribute="centerX" secondItem="7mJ-tu-57J" secondAttribute="centerX" id="ldR-VX-UR5"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ROi-ic-zME"/>
-                    <connections>
-                        <outlet property="label" destination="hzN-0h-i9F" id="sPD-ka-cPk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeZ-XH-q5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,6 +365,22 @@ Två Thunderbolt-/usb 4-portar</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poZ-oB-bVm">
+                                <rect key="frame" x="60" y="315" width="294" height="266"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="266" id="OHF-5W-kcC"/>
+                                    <constraint firstAttribute="width" constant="294" id="W20-DN-xOI"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="långKaffe"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Alla uträkningar är utefter dll's formel. Total ex moms + app *dll. ©Robin Ellingsen. 2020" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fni-c3-ogU">
                                 <rect key="frame" x="87" y="589" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -396,37 +393,31 @@ Två Thunderbolt-/usb 4-portar</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-BV-ugj">
-                                <rect key="frame" x="171.5" y="723" width="71" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlk-3d-ENQ">
+                                <rect key="frame" x="163.5" y="793" width="87" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="YIN-4y-oZi"/>
+                                    <constraint firstAttribute="height" constant="55" id="bnO-Me-bnW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Kontakt"/>
                                 <connections>
-                                    <action selector="infoButton:" destination="9qp-nv-9qS" eventType="touchUpInside" id="Pae-Um-X9I"/>
+                                    <action selector="contactButton:" destination="9qp-nv-9qS" eventType="touchUpInside" id="eSl-WF-Ne9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bjud mig på en studentkaffe =)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-lR-N1J">
-                                <rect key="frame" x="90" y="265" width="234" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="5nQ-NZ-tXJ"/>
-                                    <constraint firstAttribute="width" constant="234" id="azp-Tf-Bse"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Izq-8f-hji"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="nfn-BV-ugj" secondAttribute="trailing" constant="171.5" id="EvE-ZP-3XX"/>
                             <constraint firstItem="fni-c3-ogU" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="87" id="JNd-8e-nf6"/>
+                            <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="Xlk-3d-ENQ" secondAttribute="bottom" constant="14" id="MyW-cy-0cN"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="fni-c3-ogU" secondAttribute="bottom" constant="145" id="UA4-TB-xhH"/>
-                            <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="nfn-BV-ugj" secondAttribute="bottom" constant="101" id="bsN-46-EOr"/>
-                            <constraint firstItem="nfn-BV-ugj" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="171.5" id="e04-lN-Q2Q"/>
+                            <constraint firstItem="Xlk-3d-ENQ" firstAttribute="centerX" secondItem="geV-Mb-Zfj" secondAttribute="centerX" id="UKb-ZE-Pcy"/>
+                            <constraint firstItem="poZ-oB-bVm" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="60" id="Wxq-RN-SdF"/>
+                            <constraint firstItem="poZ-oB-bVm" firstAttribute="centerX" secondItem="geV-Mb-Zfj" secondAttribute="centerX" id="aDs-Wp-fnC"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="fni-c3-ogU" secondAttribute="trailing" constant="87" id="eWH-Tg-Pra"/>
-                            <constraint firstItem="tzA-lR-N1J" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="90" id="ola-kY-Ccz"/>
-                            <constraint firstItem="tzA-lR-N1J" firstAttribute="top" secondItem="Izq-8f-hji" secondAttribute="top" constant="177" id="s1F-Ny-xyv"/>
-                            <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="tzA-lR-N1J" secondAttribute="trailing" constant="90" id="zVm-Z0-ebS"/>
+                            <constraint firstItem="poZ-oB-bVm" firstAttribute="centerY" secondItem="geV-Mb-Zfj" secondAttribute="centerY" id="iAA-Py-bXA"/>
+                            <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="poZ-oB-bVm" secondAttribute="trailing" constant="60" id="oXd-6O-ksZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xGh-b2-I0M"/>
@@ -442,6 +433,7 @@ Två Thunderbolt-/usb 4-portar</string>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
+        <image name="långKaffe" width="416" height="116"/>
         <image name="mSmartBanner" width="1079" height="546"/>
         <image name="mba" width="452" height="420"/>
         <image name="mba2" width="2000" height="1536"/>

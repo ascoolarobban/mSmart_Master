@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,9 +22,6 @@
 		00E6423B26A76A94002B921E /* mbaStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E6423A26A76A94002B921E /* mbaStorageViewController.swift */; };
 		00E6423D26A78398002B921E /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E6423C26A78398002B921E /* TotalViewController.swift */; };
 		7DED190726A82804004B1A2D /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DED190626A82804004B1A2D /* infoViewController.swift */; };
-		7DED190A26A846A7004B1A2D /* BuyMeACoffeeDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7DED190926A846A7004B1A2D /* BuyMeACoffeeDynamic */; };
-		7DED190B26A846A7004B1A2D /* BuyMeACoffeeDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7DED190926A846A7004B1A2D /* BuyMeACoffeeDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		7DED190D26A846A7004B1A2D /* BuyMeACoffee in Frameworks */ = {isa = PBXBuildFile; productRef = 7DED190C26A846A7004B1A2D /* BuyMeACoffee */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +48,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7DED190B26A846A7004B1A2D /* BuyMeACoffeeDynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,8 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DED190A26A846A7004B1A2D /* BuyMeACoffeeDynamic in Frameworks */,
-				7DED190D26A846A7004B1A2D /* BuyMeACoffee in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,8 +180,6 @@
 			);
 			name = mSmart_test2;
 			packageProductDependencies = (
-				7DED190926A846A7004B1A2D /* BuyMeACoffeeDynamic */,
-				7DED190C26A846A7004B1A2D /* BuyMeACoffee */,
 			);
 			productName = mSmart_test2;
 			productReference = 00E641FB26A735E1002B921E /* mSmart_test2.app */;
@@ -261,7 +253,6 @@
 			);
 			mainGroup = 00E641F226A735E1002B921E;
 			packageReferences = (
-				7DED190826A846A7004B1A2D /* XCRemoteSwiftPackageReference "buymeacoffee" */,
 			);
 			productRefGroup = 00E641FC26A735E1002B921E /* Products */;
 			projectDirPath = "";
@@ -648,30 +639,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		7DED190826A846A7004B1A2D /* XCRemoteSwiftPackageReference "buymeacoffee" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/appcraftstudio/buymeacoffee.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		7DED190926A846A7004B1A2D /* BuyMeACoffeeDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7DED190826A846A7004B1A2D /* XCRemoteSwiftPackageReference "buymeacoffee" */;
-			productName = BuyMeACoffeeDynamic;
-		};
-		7DED190C26A846A7004B1A2D /* BuyMeACoffee */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7DED190826A846A7004B1A2D /* XCRemoteSwiftPackageReference "buymeacoffee" */;
-			productName = BuyMeACoffee;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00E641F326A735E1002B921E /* Project object */;
 }
