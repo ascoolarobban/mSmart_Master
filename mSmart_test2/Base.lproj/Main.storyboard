@@ -78,6 +78,19 @@
                                     <constraint firstAttribute="height" constant="254" id="3Lp-uc-Yle"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmF-Ad-gcu">
+                                <rect key="frame" x="184" y="842" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nND-cf-OVk"/>
+                                    <constraint firstAttribute="width" constant="46" id="t8a-mz-6oO"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="9qp-nv-9qS" kind="show" id="GwE-OL-6UJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,13 +98,17 @@
                             <constraint firstItem="oBr-1K-reW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7KO-tJ-mFf"/>
                             <constraint firstItem="oBr-1K-reW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-28" id="8OQ-35-HlN"/>
                             <constraint firstItem="oBr-1K-reW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9t2-Xu-SQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KmF-Ad-gcu" secondAttribute="trailing" constant="184" id="A7G-ko-Vkz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HcV-qt-wWR" secondAttribute="trailing" constant="20" id="BJB-Hl-uC5"/>
                             <constraint firstItem="oBr-1K-reW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cjz-MP-HQa"/>
                             <constraint firstItem="HcV-qt-wWR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gvo-oC-ifi"/>
+                            <constraint firstItem="KmF-Ad-gcu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="Ha9-mZ-oOw"/>
+                            <constraint firstItem="KmF-Ad-gcu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="I3C-6Q-SEH"/>
                             <constraint firstItem="HcV-qt-wWR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KoN-WK-8dm"/>
                             <constraint firstItem="oBr-1K-reW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NwK-sa-eq0"/>
                             <constraint firstItem="oBr-1K-reW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TPZ-z2-8SY"/>
                             <constraint firstItem="HcV-qt-wWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V8G-Sx-tiQ"/>
+                            <constraint firstItem="KmF-Ad-gcu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gDF-LZ-lWk"/>
                             <constraint firstItem="oBr-1K-reW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pgE-q6-rXE"/>
                         </constraints>
                     </view>
@@ -359,6 +376,80 @@ Två Thunderbolt-/usb 4-portar</string>
             </objects>
             <point key="canvasLocation" x="2798.5507246376815" y="83.705357142857139"/>
         </scene>
+        <!--Info View Controller-->
+        <scene sceneID="NRa-95-GKH">
+            <objects>
+                <viewController storyboardIdentifier="info" id="9qp-nv-9qS" customClass="infoViewController" customModule="mSmart_test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="geV-Mb-Zfj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poZ-oB-bVm">
+                                <rect key="frame" x="60" y="315" width="294" height="266"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="266" id="OHF-5W-kcC"/>
+                                    <constraint firstAttribute="width" constant="294" id="W20-DN-xOI"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="coffee"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Alla uträkningar är utefter dll's formel. Total ex moms + app *dll. ©Robin Ellingsen. 2020" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fni-c3-ogU">
+                                <rect key="frame" x="87" y="589" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5JO-oD-cE3"/>
+                                    <constraint firstAttribute="width" constant="240" id="wpn-4V-31g"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-BV-ugj">
+                                <rect key="frame" x="171.5" y="723" width="71" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Kontakt"/>
+                                <connections>
+                                    <action selector="infoButton:" destination="9qp-nv-9qS" eventType="touchUpInside" id="Pae-Um-X9I"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bjud mig på en studentkaffe =)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-lR-N1J">
+                                <rect key="frame" x="90" y="265" width="234" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5nQ-NZ-tXJ"/>
+                                    <constraint firstAttribute="width" constant="234" id="azp-Tf-Bse"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Izq-8f-hji"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="nfn-BV-ugj" secondAttribute="trailing" constant="171.5" id="EvE-ZP-3XX"/>
+                            <constraint firstItem="fni-c3-ogU" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="87" id="JNd-8e-nf6"/>
+                            <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="fni-c3-ogU" secondAttribute="bottom" constant="145" id="UA4-TB-xhH"/>
+                            <constraint firstItem="poZ-oB-bVm" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="60" id="Wxq-RN-SdF"/>
+                            <constraint firstItem="poZ-oB-bVm" firstAttribute="centerX" secondItem="geV-Mb-Zfj" secondAttribute="centerX" id="aDs-Wp-fnC"/>
+                            <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="nfn-BV-ugj" secondAttribute="bottom" constant="101" id="bsN-46-EOr"/>
+                            <constraint firstItem="nfn-BV-ugj" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="171.5" id="e04-lN-Q2Q"/>
+                            <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="fni-c3-ogU" secondAttribute="trailing" constant="87" id="eWH-Tg-Pra"/>
+                            <constraint firstItem="poZ-oB-bVm" firstAttribute="centerY" secondItem="geV-Mb-Zfj" secondAttribute="centerY" id="iAA-Py-bXA"/>
+                            <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="poZ-oB-bVm" secondAttribute="trailing" constant="60" id="oXd-6O-ksZ"/>
+                            <constraint firstItem="tzA-lR-N1J" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="90" id="ola-kY-Ccz"/>
+                            <constraint firstItem="tzA-lR-N1J" firstAttribute="top" secondItem="Izq-8f-hji" secondAttribute="top" constant="177" id="s1F-Ny-xyv"/>
+                            <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="tzA-lR-N1J" secondAttribute="trailing" constant="90" id="zVm-Z0-ebS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xGh-b2-I0M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHf-fF-Sxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737.68115942028987" y="853.79464285714278"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="6Mi-L9-eak"/>
@@ -366,6 +457,7 @@ Två Thunderbolt-/usb 4-portar</string>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
+        <image name="coffee" width="512" height="512"/>
         <image name="mSmartBanner" width="1079" height="546"/>
         <image name="mba" width="452" height="420"/>
         <image name="mba2" width="2000" height="1536"/>

@@ -13,7 +13,7 @@ class mbaStorageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Storage"
+        title = "Lagring"
 
         // Do any additional setup after loading the view.
     }
