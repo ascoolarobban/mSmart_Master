@@ -44,19 +44,14 @@ class mbaViewController: UIViewController {
         print("16")
         
     }
-//    override func prepare ( for segue: UIStoryboardSegue, sender: Any?){
-//        var totalScreen = segue.destination as! TotalViewController
-//        totalScreen.totalString = gb8button()
-//
-//    }
-//
-//    @IBAction func mba_Storage() {
-//        let vc2 = storyboard?.instantiateViewController(identifier: "mba_storage") as! mbaStorageViewController
-//        vc2.modalPresentationStyle = .fullScreen
-//        present(vc2,animated: true)
-//    }
 
-    
-
-
-}
+    @IBAction func selectMemory(_ sender: CustomCheckButton) {
+        if sender.tag == 1{
+            print("8 TRUE")
+        }
+        else if sender.tag == 2 {
+                print("16 TRUE")
+            }
+        }
+    }
+ 

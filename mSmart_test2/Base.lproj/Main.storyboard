@@ -72,12 +72,6 @@
                                     <constraint firstItem="BAE-rR-DGK" firstAttribute="leading" secondItem="HcV-qt-wWR" secondAttribute="leading" id="yjZ-xe-zP1"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mSmartBanner" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-1K-reW">
-                                <rect key="frame" x="0.0" y="-28" width="414" height="254"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="254" id="3Lp-uc-Yle"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmF-Ad-gcu">
                                 <rect key="frame" x="184" y="842" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -91,6 +85,12 @@
                                     <segue destination="9qp-nv-9qS" kind="show" id="GwE-OL-6UJ"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mSmartBanner" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-1K-reW">
+                                <rect key="frame" x="0.0" y="-28" width="414" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="3Lp-uc-Yle"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -141,7 +141,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="H3r-OM-7OH">
                                 <rect key="frame" x="20" y="384.5" width="374" height="127"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d73-7T-UVD" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d73-7T-UVD" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ETY-hg-arr"/>
@@ -153,10 +153,11 @@
                                         <connections>
                                             <action selector="gb8button:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="82W-fN-c7o"/>
                                             <action selector="memorySelected:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="zun-8M-SeT"/>
+                                            <action selector="selectMemory:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="3rw-vN-pdu"/>
                                             <segue destination="eit-Dh-ADR" kind="show" id="C34-Ti-0f6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWs-22-hJR" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWs-22-hJR" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="77" width="374" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="rNg-D1-zFY"/>
@@ -168,6 +169,7 @@
                                         <connections>
                                             <action selector="gb16button:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="BTP-3k-CDg"/>
                                             <action selector="memorySelected:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="BXC-ii-mUU"/>
+                                            <action selector="selectMemory:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="uIM-eX-OtH"/>
                                             <segue destination="eit-Dh-ADR" kind="show" id="VgL-X3-xej"/>
                                         </connections>
                                     </button>
@@ -371,10 +373,12 @@ Två Thunderbolt-/usb 4-portar</string>
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="266" id="Ccm-bR-XIF"/>
                                     <constraint firstAttribute="height" constant="266" id="OHF-5W-kcC"/>
                                     <constraint firstAttribute="width" constant="294" id="W20-DN-xOI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="yaV-ic-JAG"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="långKaffe"/>
+                                <state key="normal" title="Button" image="robin"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
@@ -405,18 +409,26 @@ Två Thunderbolt-/usb 4-portar</string>
                                     <action selector="contactButton:" destination="9qp-nv-9qS" eventType="touchUpInside" id="eSl-WF-Ne9"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robinNamn" translatesAutoresizingMaskIntoConstraints="NO" id="bna-l1-nb6">
+                                <rect key="frame" x="-34.5" y="236" width="483" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Tqe-cd-89u"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Izq-8f-hji"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fni-c3-ogU" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="87" id="JNd-8e-nf6"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="Xlk-3d-ENQ" secondAttribute="bottom" constant="14" id="MyW-cy-0cN"/>
+                            <constraint firstItem="bna-l1-nb6" firstAttribute="top" secondItem="Izq-8f-hji" secondAttribute="top" constant="148" id="TJ8-Ww-NM5"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="bottom" secondItem="fni-c3-ogU" secondAttribute="bottom" constant="145" id="UA4-TB-xhH"/>
                             <constraint firstItem="Xlk-3d-ENQ" firstAttribute="centerX" secondItem="geV-Mb-Zfj" secondAttribute="centerX" id="UKb-ZE-Pcy"/>
                             <constraint firstItem="poZ-oB-bVm" firstAttribute="leading" secondItem="Izq-8f-hji" secondAttribute="leading" constant="60" id="Wxq-RN-SdF"/>
                             <constraint firstItem="poZ-oB-bVm" firstAttribute="centerX" secondItem="geV-Mb-Zfj" secondAttribute="centerX" id="aDs-Wp-fnC"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="fni-c3-ogU" secondAttribute="trailing" constant="87" id="eWH-Tg-Pra"/>
                             <constraint firstItem="poZ-oB-bVm" firstAttribute="centerY" secondItem="geV-Mb-Zfj" secondAttribute="centerY" id="iAA-Py-bXA"/>
+                            <constraint firstItem="bna-l1-nb6" firstAttribute="centerX" secondItem="geV-Mb-Zfj" secondAttribute="centerX" id="nCU-ev-sRg"/>
                             <constraint firstItem="Izq-8f-hji" firstAttribute="trailing" secondItem="poZ-oB-bVm" secondAttribute="trailing" constant="60" id="oXd-6O-ksZ"/>
                         </constraints>
                     </view>
@@ -433,10 +445,11 @@ Två Thunderbolt-/usb 4-portar</string>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
-        <image name="långKaffe" width="416" height="116"/>
         <image name="mSmartBanner" width="1079" height="546"/>
         <image name="mba" width="452" height="420"/>
         <image name="mba2" width="2000" height="1536"/>
+        <image name="robin" width="694" height="694"/>
+        <image name="robinNamn" width="483" height="210"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
