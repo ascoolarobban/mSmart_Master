@@ -21,6 +21,7 @@
 		00E6423726A75FD5002B921E /* unitsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E6423626A75FD5002B921E /* unitsEnum.swift */; };
 		00E6423B26A76A94002B921E /* mbaStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E6423A26A76A94002B921E /* mbaStorageViewController.swift */; };
 		00E6423D26A78398002B921E /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E6423C26A78398002B921E /* TotalViewController.swift */; };
+		7D1CD2BA26AB215E009054ED /* coreChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1CD2B926AB215E009054ED /* coreChoiceViewController.swift */; };
 		7DED190726A82804004B1A2D /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DED190626A82804004B1A2D /* infoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		00E6423626A75FD5002B921E /* unitsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unitsEnum.swift; sourceTree = "<group>"; };
 		00E6423A26A76A94002B921E /* mbaStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mbaStorageViewController.swift; sourceTree = "<group>"; };
 		00E6423C26A78398002B921E /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
+		7D1CD2B926AB215E009054ED /* coreChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreChoiceViewController.swift; sourceTree = "<group>"; };
 		7DED190626A82804004B1A2D /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				00E641FE26A735E1002B921E /* AppDelegate.swift */,
 				00E6420026A735E1002B921E /* SceneDelegate.swift */,
 				00E6420226A735E1002B921E /* ViewController.swift */,
+				7D1CD2B926AB215E009054ED /* coreChoiceViewController.swift */,
 				00E6423026A74467002B921E /* mbaViewController.swift */,
 				00E6423A26A76A94002B921E /* mbaStorageViewController.swift */,
 				00E6423C26A78398002B921E /* TotalViewController.swift */,
@@ -300,6 +303,7 @@
 				00E6423726A75FD5002B921E /* unitsEnum.swift in Sources */,
 				00E6420326A735E1002B921E /* ViewController.swift in Sources */,
 				7DED190726A82804004B1A2D /* infoViewController.swift in Sources */,
+				7D1CD2BA26AB215E009054ED /* coreChoiceViewController.swift in Sources */,
 				00E6423126A74467002B921E /* mbaViewController.swift in Sources */,
 				00E641FF26A735E1002B921E /* AppDelegate.swift in Sources */,
 				00E6420126A735E1002B921E /* SceneDelegate.swift in Sources */,

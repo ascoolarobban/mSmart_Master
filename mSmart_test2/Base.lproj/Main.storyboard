@@ -31,7 +31,7 @@
                                         </state>
                                         <connections>
                                             <action selector="chooseCpu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ra2-Vn-9gm"/>
-                                            <segue destination="tHN-Kh-NnJ" kind="show" id="YZG-Ac-fK7"/>
+                                            <segue destination="W7g-Ku-dRN" kind="show" id="h2e-df-1Cr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ule-OJ-N5u" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
@@ -124,6 +124,83 @@
             </objects>
             <point key="canvasLocation" x="739.13043478260875" y="83.705357142857139"/>
         </scene>
+        <!--Core Choice View Controller-->
+        <scene sceneID="4hB-P4-fsh">
+            <objects>
+                <viewController id="W7g-Ku-dRN" customClass="coreChoiceViewController" customModule="mSmart_test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d35-Do-iyK" customClass="CoreCh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mba3" translatesAutoresizingMaskIntoConstraints="NO" id="NLJ-38-iuA">
+                                <rect key="frame" x="20" y="323" width="176" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mba4" translatesAutoresizingMaskIntoConstraints="NO" id="uoK-Ou-iNA">
+                                <rect key="frame" x="218" y="323" width="176" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Apple M1‑chip med åttakärnig processor och sjukärnig grafikprocessor" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gwj-Wb-ugy">
+                                <rect key="frame" x="218" y="432" width="176" height="115"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="uq7-nz-QQ1"/>
+                                    <constraint firstAttribute="width" constant="176" id="wf3-Cq-uYE"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygd-DP-XO8" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="584" width="152" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fnv-Cu-HBb"/>
+                                    <constraint firstAttribute="width" constant="152" id="hag-qp-3Rr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Apple M1‑chip med åttakärnig processor och sjukärnig grafikprocessor" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I0P-gY-qLg">
+                                <rect key="frame" x="20" y="432" width="176" height="115"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="ZCT-CB-30C"/>
+                                    <constraint firstAttribute="width" constant="176" id="iPV-D0-TEc"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cx2-Ig-2sZ" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                <rect key="frame" x="242" y="584" width="152" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZDz-SP-mj5"/>
+                                    <constraint firstAttribute="width" constant="152" id="qag-8s-doZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ng6-GI-net"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ng6-GI-net" firstAttribute="trailing" secondItem="cx2-Ig-2sZ" secondAttribute="trailing" constant="20" id="2fa-am-Uud"/>
+                            <constraint firstItem="cx2-Ig-2sZ" firstAttribute="top" secondItem="gwj-Wb-ugy" secondAttribute="bottom" constant="37" id="8GJ-ts-FCp"/>
+                            <constraint firstItem="I0P-gY-qLg" firstAttribute="top" secondItem="Ng6-GI-net" secondAttribute="top" constant="344" id="S7E-EL-KR5"/>
+                            <constraint firstItem="ygd-DP-XO8" firstAttribute="leading" secondItem="Ng6-GI-net" secondAttribute="leading" constant="20" id="VHN-CJ-CeJ"/>
+                            <constraint firstItem="gwj-Wb-ugy" firstAttribute="top" secondItem="Ng6-GI-net" secondAttribute="top" constant="344" id="ZnC-k9-KkA"/>
+                            <constraint firstItem="Ng6-GI-net" firstAttribute="trailing" secondItem="gwj-Wb-ugy" secondAttribute="trailing" constant="20" id="jb2-Qe-sif"/>
+                            <constraint firstItem="ygd-DP-XO8" firstAttribute="top" secondItem="I0P-gY-qLg" secondAttribute="bottom" constant="37" id="xnF-cT-qxj"/>
+                            <constraint firstItem="I0P-gY-qLg" firstAttribute="leading" secondItem="Ng6-GI-net" secondAttribute="leading" constant="20" id="xo9-JO-yqd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dUR-oh-UMd"/>
+                    <connections>
+                        <segue destination="tHN-Kh-NnJ" kind="show" identifier="seguemba" id="OwB-v8-93r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MX0-qM-87w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423.1884057971015" y="92.410714285714278"/>
+        </scene>
         <!--Mba View Controller-->
         <scene sceneID="y7C-GC-tcS">
             <objects>
@@ -214,7 +291,7 @@ Två Thunderbolt-/usb 4-portar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVS-13-t3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450.7246376811595" y="83.705357142857139"/>
+            <point key="canvasLocation" x="2148" y="84"/>
         </scene>
         <!--Mba Storage View Controller-->
         <scene sceneID="vSP-2W-ls6">
@@ -237,8 +314,8 @@ Två Thunderbolt-/usb 4-portar</string>
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="gb256Button:" destination="eit-Dh-ADR" eventType="touchUpInside" id="b0M-IL-c4w"/>
                                             <action selector="storageSelected:" destination="eit-Dh-ADR" eventType="touchUpInside" id="Kmj-ay-bt1"/>
-                                            <segue destination="LL8-rp-HVU" kind="show" id="6Mi-L9-eak"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-M3-DDV" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
@@ -251,8 +328,8 @@ Två Thunderbolt-/usb 4-portar</string>
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="gb512:" destination="eit-Dh-ADR" eventType="touchUpInside" id="wjf-dx-pQ0"/>
                                             <action selector="storageSelected:" destination="eit-Dh-ADR" eventType="touchUpInside" id="mia-x5-z3V"/>
-                                            <segue destination="LL8-rp-HVU" kind="show" id="Ocx-5V-Cxk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jl-7g-h4c" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
@@ -266,7 +343,7 @@ Två Thunderbolt-/usb 4-portar</string>
                                         </state>
                                         <connections>
                                             <action selector="storageSelected:" destination="eit-Dh-ADR" eventType="touchUpInside" id="fjj-Xc-9yv"/>
-                                            <segue destination="LL8-rp-HVU" kind="show" id="Y4u-87-6B3"/>
+                                            <action selector="tb1button:" destination="eit-Dh-ADR" eventType="touchUpInside" id="006-zC-8WQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-rn-4dn" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
@@ -280,7 +357,7 @@ Två Thunderbolt-/usb 4-portar</string>
                                         </state>
                                         <connections>
                                             <action selector="storageSelected:" destination="eit-Dh-ADR" eventType="touchUpInside" id="34S-PK-KRK"/>
-                                            <segue destination="LL8-rp-HVU" kind="show" id="8TG-c5-azr"/>
+                                            <action selector="tb2button:" destination="eit-Dh-ADR" eventType="touchUpInside" id="stq-Rx-ewC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -323,11 +400,12 @@ Två Thunderbolt-/usb 4-portar</string>
                         <outletCollection property="mba_storageButtons" destination="pdz-M3-DDV" collectionClass="NSMutableArray" id="Idx-eo-bUF"/>
                         <outletCollection property="mba_storageButtons" destination="6Jl-7g-h4c" collectionClass="NSMutableArray" id="RLP-35-uG8"/>
                         <outletCollection property="mba_storageButtons" destination="Xc5-rn-4dn" collectionClass="NSMutableArray" id="hk8-jA-P2v"/>
+                        <segue destination="LL8-rp-HVU" kind="show" identifier="seguetotal" id="0Fe-HU-fSV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAh-68-cYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115.9420289855075" y="83.705357142857139"/>
+            <point key="canvasLocation" x="2813" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OP0-Ut-Wtr">
@@ -356,14 +434,69 @@ Två Thunderbolt-/usb 4-portar</string>
                     <view key="view" contentMode="scaleToFill" id="7mJ-tu-57J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="Yeq-fj-nw1">
+                                <rect key="frame" x="51" y="383" width="312" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rB7-8w-bvZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="2X7-Ql-mUC"/>
+                                            <constraint firstAttribute="width" constant="130" id="ieN-bx-Q7F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePf-ne-7wl">
+                                        <rect key="frame" x="182" y="0.0" width="130" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="GGz-x9-IXJ"/>
+                                            <constraint firstAttribute="height" constant="130" id="St9-s5-a3c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 mån" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dr-UX-u77">
+                                <rect key="frame" x="51" y="329" width="130" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="4pe-89-L57"/>
+                                    <constraint firstAttribute="width" constant="130" id="kVn-as-CW8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36 mån" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLh-PV-8of">
+                                <rect key="frame" x="233" y="329" width="130" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="6r7-3N-TCJ"/>
+                                    <constraint firstAttribute="height" constant="46" id="RqV-UZ-gRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gb8-xF-ihd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dLh-PV-8of" firstAttribute="top" secondItem="gb8-xF-ihd" secondAttribute="top" constant="241" id="UVe-cQ-ONk"/>
+                            <constraint firstItem="Yeq-fj-nw1" firstAttribute="centerY" secondItem="7mJ-tu-57J" secondAttribute="centerY" id="aQD-LW-7So"/>
+                            <constraint firstItem="gb8-xF-ihd" firstAttribute="trailing" secondItem="dLh-PV-8of" secondAttribute="trailing" constant="51" id="bYP-KH-XUq"/>
+                            <constraint firstItem="5dr-UX-u77" firstAttribute="leading" secondItem="gb8-xF-ihd" secondAttribute="leading" constant="51" id="jWx-0u-3cJ"/>
+                            <constraint firstItem="Yeq-fj-nw1" firstAttribute="centerX" secondItem="7mJ-tu-57J" secondAttribute="centerX" id="nJy-Zw-cGG"/>
+                            <constraint firstItem="5dr-UX-u77" firstAttribute="top" secondItem="gb8-xF-ihd" secondAttribute="top" constant="241" id="xYq-f9-gkR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ROi-ic-zME"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeZ-XH-q5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2798.5507246376815" y="83.705357142857139"/>
+            <point key="canvasLocation" x="2813" y="792"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="NRa-95-GKH">
@@ -384,7 +517,7 @@ Två Thunderbolt-/usb 4-portar</string>
                                     <constraint firstAttribute="width" constant="294" id="W20-DN-xOI"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="yaV-ic-JAG"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="robin"/>
+                                <state key="normal" title="Button" image="Robin"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="20"/>
@@ -442,18 +575,17 @@ Två Thunderbolt-/usb 4-portar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHf-fF-Sxe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737.68115942028987" y="853.79464285714278"/>
+            <point key="canvasLocation" x="739" y="792"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="6Mi-L9-eak"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>
+        <image name="Robin" width="694" height="694"/>
         <image name="mSmartBanner" width="1079" height="546"/>
         <image name="mba" width="452" height="420"/>
         <image name="mba2" width="2000" height="1536"/>
-        <image name="robin" width="694" height="694"/>
+        <image name="mba3" width="452" height="420"/>
+        <image name="mba4" width="904" height="840"/>
         <image name="robinNamn" width="483" height="210"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

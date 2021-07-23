@@ -10,6 +10,7 @@ import UIKit
 class TotalViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    var receivedText = String()
     var totalString = String()
     
     

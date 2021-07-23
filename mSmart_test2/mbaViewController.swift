@@ -9,8 +9,8 @@ import UIKit
 
 class mbaViewController: UIViewController {
     
-    let setPrice8 = "12495"
-    let setPrice16 = "14995"
+    let setPrice8 = 0
+    let setPrice16 = 1
     
 
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ class mbaViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! mbaStorageViewController
-        destination.receivedText = sender as! String
+        destination.receivedText = sender as! Bool
     }
 
     @IBAction func button8gb(_ sender: Any) {
