@@ -138,43 +138,6 @@
                                     <constraint firstAttribute="height" constant="164" id="BtA-Wm-E5A"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="H3r-OM-7OH">
-                                <rect key="frame" x="20" y="384.5" width="374" height="127"/>
-                                <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d73-7T-UVD" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ETY-hg-arr"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="8 GB enhetligt minne">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="gb8button:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="82W-fN-c7o"/>
-                                            <action selector="memorySelected:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="zun-8M-SeT"/>
-                                            <action selector="selectMemory:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="3rw-vN-pdu"/>
-                                            <segue destination="eit-Dh-ADR" kind="show" id="C34-Ti-0f6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWs-22-hJR" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="77" width="374" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="rNg-D1-zFY"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="16 GB enhetligt minne">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="gb16button:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="BTP-3k-CDg"/>
-                                            <action selector="memorySelected:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="BXC-ii-mUU"/>
-                                            <action selector="selectMemory:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="uIM-eX-OtH"/>
-                                            <segue destination="eit-Dh-ADR" kind="show" id="VgL-X3-xej"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7R-ca-102">
                                 <rect key="frame" x="20" y="252" width="374" height="121"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -193,30 +156,60 @@ Två Thunderbolt-/usb 4-portar</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Xqb-4J-Qsy">
+                                <rect key="frame" x="20" y="384.5" width="374" height="127"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQt-WW-pcy" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="d7e-s2-gIR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="8 GB enhetligt minne">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button8gb:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="89Q-7A-O9j"/>
+                                            <action selector="memorySelected:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="sdo-LF-KrB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThJ-Wg-Jbz" customClass="CustomCheckButton" customModule="mSmart_test2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8ns-qE-veS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="16 GB enhetligt minne">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button16gb:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="H14-WU-3iE"/>
+                                            <action selector="memorySelected:" destination="tHN-Kh-NnJ" eventType="touchUpInside" id="v7V-OE-rEW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mBk-K5-o9F"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Xqb-4J-Qsy" firstAttribute="centerY" secondItem="AJk-at-ksX" secondAttribute="centerY" id="1MM-m7-gOo"/>
                             <constraint firstItem="ALq-Nd-Uhw" firstAttribute="top" secondItem="mBk-K5-o9F" secondAttribute="top" id="AUz-43-I1k"/>
                             <constraint firstItem="E7R-ca-102" firstAttribute="leading" secondItem="mBk-K5-o9F" secondAttribute="leading" constant="20" id="AyH-gd-oUX"/>
-                            <constraint firstItem="H3r-OM-7OH" firstAttribute="centerY" secondItem="AJk-at-ksX" secondAttribute="centerY" id="OKL-9v-IZh"/>
-                            <constraint firstItem="H3r-OM-7OH" firstAttribute="centerX" secondItem="AJk-at-ksX" secondAttribute="centerX" id="XkG-ZB-dDT"/>
-                            <constraint firstItem="H3r-OM-7OH" firstAttribute="centerY" secondItem="AJk-at-ksX" secondAttribute="centerY" id="YxF-Dv-Xbz"/>
-                            <constraint firstItem="H3r-OM-7OH" firstAttribute="centerX" secondItem="AJk-at-ksX" secondAttribute="centerX" id="e3F-OX-GwW"/>
+                            <constraint firstItem="Xqb-4J-Qsy" firstAttribute="leading" secondItem="mBk-K5-o9F" secondAttribute="leading" constant="20" id="WFg-P4-a6V"/>
+                            <constraint firstItem="Xqb-4J-Qsy" firstAttribute="centerX" secondItem="AJk-at-ksX" secondAttribute="centerX" id="bP3-Du-jA6"/>
                             <constraint firstItem="mBk-K5-o9F" firstAttribute="trailing" secondItem="ALq-Nd-Uhw" secondAttribute="trailing" constant="20" id="i44-AG-CSn"/>
-                            <constraint firstItem="H3r-OM-7OH" firstAttribute="leading" secondItem="mBk-K5-o9F" secondAttribute="leading" constant="20" id="jk5-RT-if5"/>
                             <constraint firstItem="ALq-Nd-Uhw" firstAttribute="leading" secondItem="mBk-K5-o9F" secondAttribute="leading" constant="20" id="kU7-Mj-s6n"/>
-                            <constraint firstItem="mBk-K5-o9F" firstAttribute="trailing" secondItem="H3r-OM-7OH" secondAttribute="trailing" constant="20" id="pEh-KJ-M80"/>
+                            <constraint firstItem="mBk-K5-o9F" firstAttribute="trailing" secondItem="Xqb-4J-Qsy" secondAttribute="trailing" constant="20" id="qME-VG-SVK"/>
                             <constraint firstItem="E7R-ca-102" firstAttribute="top" secondItem="ALq-Nd-Uhw" secondAttribute="bottom" id="tcp-zl-d6N"/>
                             <constraint firstItem="mBk-K5-o9F" firstAttribute="trailing" secondItem="E7R-ca-102" secondAttribute="trailing" constant="20" id="vzc-gJ-9Ag"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="h6u-ml-r9i"/>
                     <connections>
-                        <outlet property="gb16Button" destination="bWs-22-hJR" id="mjn-VL-gGK"/>
-                        <outlet property="gb8button" destination="d73-7T-UVD" id="A6V-cj-CW1"/>
-                        <outletCollection property="mba_memorySelect" destination="d73-7T-UVD" collectionClass="NSMutableArray" id="dyn-R9-6L8"/>
-                        <outletCollection property="mba_memorySelect" destination="bWs-22-hJR" collectionClass="NSMutableArray" id="kSy-wm-uds"/>
+                        <outletCollection property="mba_memorySelect" destination="ThJ-Wg-Jbz" collectionClass="NSMutableArray" id="3Sm-ax-2TK"/>
+                        <outletCollection property="mba_memorySelect" destination="KQt-WW-pcy" collectionClass="NSMutableArray" id="DLJ-9c-rYN"/>
+                        <segue destination="eit-Dh-ADR" kind="show" identifier="segueStorage" id="Ay1-OM-Y5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVS-13-t3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -298,13 +291,25 @@ Två Thunderbolt-/usb 4-portar</string>
                                     <constraint firstAttribute="height" constant="191" id="KuN-w8-gbY"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnT-kv-6zY">
+                                <rect key="frame" x="157" y="618" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Id9-kx-6Hh"/>
+                                    <constraint firstAttribute="height" constant="100" id="Nmq-ZR-AQN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V06-d8-5J1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BjB-Zq-naI" firstAttribute="centerY" secondItem="QXJ-it-rmJ" secondAttribute="centerY" id="1eu-aP-6fk"/>
+                            <constraint firstItem="V06-d8-5J1" firstAttribute="bottom" secondItem="FnT-kv-6zY" secondAttribute="bottom" constant="144" id="28q-AI-XQc"/>
                             <constraint firstItem="UMX-tP-6VT" firstAttribute="top" secondItem="V06-d8-5J1" secondAttribute="top" id="8bc-2A-U48"/>
                             <constraint firstItem="UMX-tP-6VT" firstAttribute="leading" secondItem="V06-d8-5J1" secondAttribute="leading" constant="20" id="NzD-fb-laB"/>
+                            <constraint firstItem="FnT-kv-6zY" firstAttribute="centerX" secondItem="QXJ-it-rmJ" secondAttribute="centerX" id="YGM-OS-mXu"/>
                             <constraint firstItem="V06-d8-5J1" firstAttribute="trailing" secondItem="BjB-Zq-naI" secondAttribute="trailing" constant="20" id="dcO-jH-NOa"/>
                             <constraint firstItem="V06-d8-5J1" firstAttribute="trailing" secondItem="UMX-tP-6VT" secondAttribute="trailing" constant="20" id="eEC-Bg-dHP"/>
                             <constraint firstItem="BjB-Zq-naI" firstAttribute="centerX" secondItem="QXJ-it-rmJ" secondAttribute="centerX" id="f9b-mc-Prx"/>
@@ -313,6 +318,7 @@ Två Thunderbolt-/usb 4-portar</string>
                     </view>
                     <navigationItem key="navigationItem" id="WX9-Ki-OlJ"/>
                     <connections>
+                        <outlet property="label" destination="FnT-kv-6zY" id="kmm-sK-1R0"/>
                         <outletCollection property="mba_storageButtons" destination="Pt9-rV-7g1" collectionClass="NSMutableArray" id="3OL-IC-4XH"/>
                         <outletCollection property="mba_storageButtons" destination="pdz-M3-DDV" collectionClass="NSMutableArray" id="Idx-eo-bUF"/>
                         <outletCollection property="mba_storageButtons" destination="6Jl-7g-h4c" collectionClass="NSMutableArray" id="RLP-35-uG8"/>
@@ -321,7 +327,7 @@ Två Thunderbolt-/usb 4-portar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAh-68-cYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2117" y="84"/>
+            <point key="canvasLocation" x="2115.9420289855075" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OP0-Ut-Wtr">
@@ -441,7 +447,6 @@ Två Thunderbolt-/usb 4-portar</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="6Mi-L9-eak"/>
-        <segue reference="C34-Ti-0f6"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemBlueColor"/>
     <resources>

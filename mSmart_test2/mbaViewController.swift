@@ -8,10 +8,11 @@
 import UIKit
 
 class mbaViewController: UIViewController {
-
     
-    @IBOutlet weak var gb8button: CustomCheckButton!
-    @IBOutlet weak var gb16Button: CustomCheckButton!
+    let setPrice8 = "12495"
+    let setPrice16 = "14995"
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Macbook air"
@@ -35,23 +36,18 @@ class mbaViewController: UIViewController {
         sender.layer.borderWidth = 2;
         sender.layer.borderColor = UIColor.systemBlue.cgColor
     }
-    @IBAction func gb8button(_ sender: CustomCheckButton){
-        print ("8Gb")
-        
-    }
-    @IBAction func gb16button(_ sender: CustomCheckButton) {
-        
-        print("16")
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! mbaStorageViewController
+        destination.receivedText = sender as! String
     }
 
-    @IBAction func selectMemory(_ sender: CustomCheckButton) {
-        if sender.tag == 1{
-            print("8 TRUE")
-        }
-        else if sender.tag == 2 {
-                print("16 TRUE")
-            }
-        }
+    @IBAction func button8gb(_ sender: Any) {
+        performSegue(withIdentifier: "segueStorage", sender: setPrice8)
     }
- 
+    
+    @IBAction func button16gb(_ sender: Any) {
+        performSegue(withIdentifier: "segueStorage", sender: setPrice16)
+    }
+    
+}
+

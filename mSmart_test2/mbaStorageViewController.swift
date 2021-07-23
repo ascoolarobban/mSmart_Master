@@ -10,6 +10,10 @@
 import UIKit
 
 class mbaStorageViewController: UIViewController {
+    
+    @IBOutlet weak var label: UILabel!
+    
+    var receivedText = String()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +33,11 @@ class mbaStorageViewController: UIViewController {
         
         sender.layer.borderWidth = 2;
         sender.layer.borderColor = UIColor.systemBlue.cgColor
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        label.text = receivedText
     }
     
 
